@@ -14,7 +14,9 @@ def return_prediction(pipe_lr, text):
     return prediction
 
 # 4. load our moment predictor model
-model = joblib.load('moment_predictor.joblib')
+# import os
+# print(os.getcwd())
+model = joblib.load('web_application/moment_predictor.joblib')
 
 # 5. create a WTForm Class
 class PredictForm(FlaskForm):
